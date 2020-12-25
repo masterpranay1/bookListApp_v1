@@ -1,0 +1,117 @@
+body
+{
+    margin: 0 5%;
+}
+
+/*heading*/
+div.heading
+{
+    background: rgb(120, 209, 202);
+    text-align: center;
+}
+div.heading h1
+{
+    font-size: 3em;
+    font-weight: 300;
+    color: rgb(248, 247, 247);
+}
+
+div.error
+{
+    width: 100%;
+    background: rgb(209, 59, 59);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    height: 0;
+    opacity: 0;
+}
+div.ok
+{
+    width: 100%;
+    background: rgb(82, 247, 82);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    height: 0;
+    opacity: 0;
+}
+/*styling new book list form*/
+div.newBook
+{
+    width: 100%;
+}
+form div
+{
+    font-size: 90%;
+}
+form input
+{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    width: 98%;
+    padding: 0 1%;
+    border: 1px rgb(128, 125, 125) solid;
+    height: 5vh;
+    outline-color: rgb(172, 241, 234);
+    font-size: 1.1em;
+    color: rgb(114, 112, 112);
+}
+form button
+{
+    background: rgb(16, 209, 193);
+    width: 100%;
+    border: none;
+    padding: 1% 0;
+    font-size: 1.3em;
+    color: white;
+}
+form button:hover
+{
+    cursor: pointer;
+    background: rgba(16, 209, 193, 0.664);
+    outline-color: rgb(152, 168, 216);
+}
+/*now styling list of books we have */ 
+
+div.list h2
+{
+    margin: 0;
+    font-weight: 600;
+}
+/*styling table*/
+div.list table
+{
+    width: 100%;
+    border-spacing: 0;
+}
+div.list table tr:first-child td
+{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+div.list table tr:not(:first-child)
+{
+    background: rgb(190, 207, 211);
+}
+div.list table tr td
+{
+    padding: 2vh 1vh;
+}
+div.list table tr:not(:first-child) td
+{
+    border-top: 1px solid rgb(98, 95, 95);
+    font-size: 1.1em;
+}
+table tr td.delete
+{
+    background: red;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+table tr td.delete:hover
+{
+    background: rgb(156, 4, 4);
+    cursor: pointer;
+}
