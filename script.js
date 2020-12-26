@@ -1,4 +1,5 @@
 document.querySelector('button').addEventListener('click',fun);
+var noOfBooks = 0;
 function fun(e)
 {
     e.preventDefault();
@@ -23,7 +24,8 @@ function fun(e)
     {
         document.querySelector('div.ok').style.opacity = '1';
         document.querySelector('div.ok').style.height = '5vh';
-        var sno = document.createTextNode(2),
+        noOfBooks += 1;
+        var sno = document.createTextNode(noOfBooks),
             name = document.createTextNode(x[0].value),
             author = document.createTextNode(x[1].value),
             isbn = document.createTextNode(x[2].value);
